@@ -1,5 +1,6 @@
 import Filter from "./components/Filter";
 import Header from "./components/Header";
+import NewsCard from "./components/NewsCard";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       />
       <Header />
       <Filter />
+      <NewsCard />
     </>
   );
 }

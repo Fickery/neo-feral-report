@@ -1,0 +1,58 @@
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.newsCardMainCont {
+  flex-grow: 0.1;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+
+  border: 1px solid black;
+}
+
+.newsCardSite {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.15rem;
+  padding-left: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: hsl(0, 100%, 89%);
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+
+.newsCardTitleCont {
+  width: 25em;
+  padding: 20px 0px 10px 20px;
+}
+
+.newsCardTitle {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+  color: blue;
+  transition: all 0.05s ease-in-out;
+}
+
+.newsCardTitle:hover {
+  color: #fe0000;
+}
+
+.newsCardTitleheadline {
+  cursor: pointer;
+}
+
+.newsCardTitleHours {
+  color: black !important;
+  font-size: 12px;
+}
