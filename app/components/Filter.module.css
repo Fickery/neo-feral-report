@@ -1,0 +1,41 @@
+.filterMain {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filterList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 10px 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+.filterListIndv {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.filterListIndv::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.filterListIndv:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

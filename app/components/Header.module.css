@@ -1,0 +1,79 @@
+.headerBold {
+  font-weight: 500;
+}
+
+.headerBoldFontX {
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: Bebas Neue;
+}
+
+.headerNav {
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0px 0px;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+}
+
+.headerNavLeft,
+.headerNavRight {
+  display: flex;
+}
+
+.headerNavLeft {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerDate {
+  display: flex;
+  gap: 1rem;
+}
+
+.headerNavRight {
+  gap: 100px;
+}
+
+.headerNavButton {
+  display: inline-block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background-color: #303030;
+  color: white;
+  border: 1px solid black;
+  padding: 3px 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.headerNavButton:hover {
+  color: #1f1f1f;
+  background-color: #c1c1c1;
+}
+
+/* .headerNavButton::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.headerNavButton:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
