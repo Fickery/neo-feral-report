@@ -5,15 +5,15 @@ const Header = () => {
   return (
     <nav className={styles.headerNav}>
       <div className={styles.headerNavLeft}>
-        <p className={styles.headerBoldFontX}>NEO-FERAL REPORT</p>
+        <p className={styles.headerBoldFont}>NEO-FERAL REPORT</p>
         <p className={styles.headerRefreshDate}>
           Last refresh: <i>09 October 2023, 10 AM (GMT+7)</i>
         </p>
       </div>
 
-      <div className={styles.headerNavRight}>
+      {/* <div className={styles.headerNavRight}>
         <div className={styles.headerNavButton}>Sign In</div>
-      </div>
+      </div> */}
     </nav>
   );
 };

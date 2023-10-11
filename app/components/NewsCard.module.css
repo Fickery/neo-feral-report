@@ -1,41 +1,36 @@
-.test {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 35px;
+.newsCard {
+  max-width: auto;
+  margin: 0 auto;
+  display: column;
+  columns: 3;
+  column-gap: 2em;
+  gap: 1em;
+  grid-auto-flow: dense;
+}
+
+.newsCard > * {
+  break-inside: avoid;
+  margin-bottom: 1em;
 }
 
 .newsCardMainCont {
-  flex-grow: 0.1;
-  height: 100%;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-
   border: 1px solid black;
 }
 
 .newsCardSite {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 0.15rem;
   padding-left: 0.5rem;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   background-color: hsl(0, 100%, 89%);
-  width: 100%;
-  height: 100%;
   border-bottom: 1px solid black;
 }
 
 .newsCardTitleCont {
-  width: 25em;
-  padding: 20px 0px 10px 20px;
+  padding: 2% 0% 2% 5%;
 }
 
 .newsCardTitle {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -55,4 +50,10 @@
 .newsCardTitleHours {
   color: black !important;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .newsCard {
+    columns: 1;
+  }
 }

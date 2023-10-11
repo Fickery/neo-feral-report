@@ -1,41 +1,92 @@
 .filterMain {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .filterList {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 5rem;
-  padding: 10px 50px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: black;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 .filterListIndv {
-  display: inline-block;
-  position: relative;
   cursor: pointer;
+  transition: all 0.07s ease-in-out;
 }
 
-.filterListIndv::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
+.filterListIndv:hover {
+  color: #fe0000;
+}
+
+@media screen and (max-width: 768px) {
+  .filterList {
+    font-size: calc(9px + 0.390625vw);
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* article */
+
+.column {
+  border: 1px solid black;
+  margin-bottom: 2em;
+  break-inside: avoid;
+}
+
+.articlesContainer {
+  max-width: auto;
+  margin: 0 auto;
+  display: column;
+  columns: 3;
+  column-gap: 2em;
+  gap: 1em;
+  grid-auto-flow: dense;
+}
+
+.sitename {
+  padding: 0.15rem;
+  padding-left: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: hsl(0, 100%, 89%);
+  border-bottom: 1px solid black;
+}
+
+.newsCardTitleCont {
+  padding: 2% 5% 2% 5%;
+}
+
+.newsCardTitle {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
+  color: blue;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+.newsCardTitle:hover {
+  color: #fe0000;
+}
+
+.selected {
+  color: red;
+  text-decoration: underline;
+}
+
+.publishedAt {
+  font-size: 0.75rem;
   color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
 }
 
-.filterListIndv:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+@media screen and (max-width: 768px) {
+  .articlesContainer {
+    columns: 1;
+  }
 }

@@ -2,12 +2,23 @@ import React from "react";
 import styles from "./NewsCard.module.css";
 import newsData from "../api/data.js";
 
+const getRandPastelColor = () => {
+  const hue = Math.floor(Math.random() * 360);
+  const lightness = Math.floor(Math.random() * 31) + 70;
+  return `hsl(${hue}, 100%, ${lightness}%)`;
+};
+
 const NewsComponent = () => {
   return (
-    <div className={styles.test}>
+    <div className={styles.newsCard}>
       {newsData.map((site, index) => (
         <div className={styles.newsCardMainCont}>
-          <p className={styles.newsCardSite}>{site.site}</p>
+          <p
+            className={styles.newsCardSite}
+            style={{ backgroundColor: getRandPastelColor() }}
+          >
+            {site.site}
+          </p>
           <ul className={styles.newsCardTitleCont}>
             {site.headlines.map((headline, index) => (
               <li key={index} className={styles.newsCardTitle}>

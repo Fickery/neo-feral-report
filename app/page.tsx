@@ -11,7 +11,7 @@ export default function Home() {
       />
       <Header />
       <Filter />
-      <NewsCard />
+      {/* <NewsCard /> */}
     </>
   );
 }
